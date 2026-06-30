@@ -1,4 +1,4 @@
-aws_region   = "ap-south-2"
+aws_region    = "ap-south-2"
 instance_type = "t3.micro"
 ami_id        = "ami-0199ac7c9fbf9ed83"
 key_name      = "demoKP"

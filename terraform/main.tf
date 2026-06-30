@@ -2,7 +2,7 @@
 
 resource "aws_security_group" "ec2_sg" {
 
-  name        = "terraform-ec2-sg"
+  name = "terraform-ec2-sg"
 
   description = "Allow SSH access"
 
@@ -44,11 +44,11 @@ resource "aws_security_group" "ec2_sg" {
 
 resource "aws_instance" "ec2_instance" {
 
-  ami           = var.ami_id
+  ami = var.ami_id
 
   instance_type = var.instance_type
 
-  key_name      = var.key_name
+  key_name = var.key_name
 
   vpc_security_group_ids = [
 
